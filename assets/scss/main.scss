@@ -1,0 +1,122 @@
+@import "bootstrap/scss/functions";
+
+@function rem($size) {
+  $remSize: $size * 1rem / 16;
+  @return $remSize;
+}
+
+@import "variables/colors";
+@import "variables/grid";
+@import "variables/type";
+@import "variables/forms";
+@import "variables/navbar";
+@import "variables/misc";
+
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/utilities/spacing";
+@import "bootstrap/scss/utilities/sizing";
+@import "bootstrap/scss/utilities/text";
+@import "bootstrap/scss/utilities/position";
+@import "bootstrap/scss/utilities/flex";
+@import "bootstrap/scss/utilities/display";
+
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/input-group";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/badge";
+
+@import '../../node_modules/cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr.css';
+
+@import "fonts";
+@import "logo";
+@import "header";
+@import "v-calendar";
+@import "mj-calendar";
+@import "form";
+@import "helpers";
+@import "dropdowns/dropdown_navbar";
+@import "footer";
+@import "forms/form_check_simple";
+@import "forms/form_select";
+@import "input_groups/input_group_password";
+@import "input_groups/input_group_subscribe";
+@import "buttons/button_auth";
+@import "cards/card_auth";
+@import "pages/page_auth";
+@import "pages/page_settings";
+
+@import "./notify.scss";
+@import "./slider-styles";
+
+.font-weight-medium { font-weight: $font-weight-medium !important; }
+
+input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    left: 0;
+    padding: 0 0 0 28px;
+    cursor: pointer;
+    user-select: none;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 2px;
+      border: 1px solid #cedbe3;
+      background-color: #fff;
+    }
+  }
+
+  &:checked + label:before {
+    background: url("~assets/icons/tick.svg") 3px 3px no-repeat;
+    background-color: #fff;
+  }
+}
+
+.section-header-text {
+  font-size: 44px;
+  font-weight: 500;
+  color: $blue-dark;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+input[type=text] {
+  border: 1px solid #b5c9d5;
+  border-radius: 2px;
+  padding: 10px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .section-header-text {
+    font-size: 40px;
+    line-height: 3rem;
+  }
+}
+
+@media (max-width: 436px) {
+  .featured-slider, .iceland-slider {
+    width: 290px
+  }
+
+  .section-header-text {
+    padding: 0 20px 0 20px;
+  }
+}

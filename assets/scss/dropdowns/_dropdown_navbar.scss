@@ -1,0 +1,29 @@
+.dropdown-navbar {
+  .dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    width: 143px;
+    padding: 11px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+    background-color: $body-bg;
+    z-index: $zindex-dropdown;
+
+    .dropdown-item {
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      font-size: 13px;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  &:hover {
+    .dropdown_menu {
+      display: block;
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+.form-control.form-select {
+  cursor: pointer;
+  background-color: transparent;
+  color: currentColor;
+  span {
+    user-select: none;
+  }
+
+  .caret {
+    position: absolute;
+    top: 50%;
+    right: $input-btn-padding-x;
+    display: block;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    margin-top: -3px;
+
+    &:not(.show) {
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+    }
+    &.show {
+      border-left: 1px solid currentColor;
+      border-top: 1px solid currentColor;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 100%;
+    .dropdown-item {
+      user-select: none;
+    }
+  }
+}

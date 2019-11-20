@@ -1,0 +1,34 @@
+$red:                         #ff530d;
+$orange:                      #faab1a;
+$yellow:                      #fac132;
+$green:                       #74ceb7;
+$blue:                        #094c74;
+$blue-light:                  #2980b9;
+$blue-dark:                   #052e46;
+$gray-light:                  #5b778c;
+$black:                       #01080c;
+$white:                       #fff          !default;
+
+$primary:                     $blue         !default;
+$secondary:                   $orange;
+$info:                        $blue-light;
+$danger:                      $red          !default;
+$light:                       #9db7c7;
+$dark:                        $blue-dark;
+
+$body-color:                  $dark;
+
+.color{
+  &-blue{
+    color: $blue;
+  }
+  &-black{
+    color: $black;
+  }
+  &-blue-light{
+    color: $blue-light;
+  }
+  &-blue-dark{
+    color: $blue-dark;
+  }
+}

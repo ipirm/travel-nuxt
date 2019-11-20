@@ -1,0 +1,151 @@
+//Paddings
+@for $i from 0 through 20 {
+
+  .p-#{$i * 5} {
+    padding: #{($i * 5) + 'px'} !important;
+  }
+
+  .pt-#{$i * 5} {
+    padding-top: #{($i * 5) + 'px'} !important;
+  }
+
+  .pr-#{$i * 5} {
+    padding-right: #{($i * 5) + 'px'} !important;
+  }
+
+  .pb-#{$i * 5} {
+    padding-bottom: #{($i * 5) + 'px'} !important;
+  }
+
+  .pl-#{$i * 5} {
+    padding-left: #{($i * 5) + 'px'} !important;
+  }
+
+  .ph-#{$i * 5} {
+    padding-left: #{($i * 5) + 'px'} !important;
+    padding-right: #{($i * 5) + 'px'} !important;
+  }
+
+  .pv-#{$i * 5} {
+    padding-top: #{($i * 5) + 'px'} !important;
+    padding-bottom: #{($i * 5) + 'px'} !important;
+  }
+}
+
+//Margins
+@for $i from 0 through 20 {
+
+  .m-#{$i * 5} {
+    margin: #{($i * 5) + 'px'} !important;
+  }
+
+  .mt-#{$i * 5} {
+    margin-top: #{($i * 5) + 'px'} !important;
+  }
+
+  .mr-#{$i * 5} {
+    margin-right: #{($i * 5) + 'px'} !important;
+  }
+
+  .mb-#{$i * 5} {
+    margin-bottom: #{($i * 5) + 'px'} !important;
+  }
+
+  .ml-#{$i * 5} {
+    margin-left: #{($i * 5) + 'px'} !important;
+  }
+
+  .mh-#{$i * 5} {
+    margin-left: #{($i * 5) + 'px'} !important;
+    margin-right: #{($i * 5) + 'px'} !important;
+  }
+
+  .mv-#{$i * 5} {
+    margin-top: #{($i * 5) + 'px'} !important;
+    margin-bottom: #{($i * 5) + 'px'} !important;
+  }
+}
+
+.mb-3{
+  margin-bottom: 3px !important;
+}
+.mb-8{
+  margin-bottom: 8px !important;
+}
+.mb-12{
+  margin-bottom: 12px !important;
+}
+.mt-12{
+  margin-top: 12px !important;
+}
+.mb-18{
+  margin-bottom: 18px !important;
+}
+
+.mt-n-30{
+  margin-top: -30px;
+}
+
+.mt-n-90{
+  margin-top: -90px;
+}
+
+@for $opacity from 1 through 40 {
+
+  .opacity-#{$opacity} {
+    opacity: #{$opacity / 10}  !important;
+  }
+}
+
+// Font size
+@for $size from 1 through 40 {
+
+  .fz-#{$size} {
+    font-size: #{$size}px !important;
+  }
+}
+
+@media (max-width: 767px){
+  // Font size
+  @for $size from 1 through 40 {
+
+    .fz-xs-#{$size} {
+      font-size: #{$size}px !important;
+    }
+  }
+}
+
+//Width
+@for $w from 1 through 20{
+  .w-#{$w * 5}{
+    width: #{($w * 5) + '%'} !important;
+  }
+}
+
+//Letter spacing
+@for $size from 1 through 5 {
+
+  .letter-spacing-#{$size} {
+    letter-spacing: #{$size}px !important;
+  }
+}
+
+//Font weight
+@for $weight from 1 through 9 {
+  .fw-#{$weight * 100} {
+    font-weight: #{$weight * 100} !important;
+  }
+}
+
+//Line height
+@for $l from 10 through 20 {
+
+  .lh-#{$l} {
+    line-height: #{$l / 10} !important;
+  }
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+}

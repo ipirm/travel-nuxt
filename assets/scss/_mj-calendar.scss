@@ -1,0 +1,48 @@
+.mj-calendar{
+  padding: 20px 32px;
+
+  .calendar-header{
+    justify-content: center;
+
+  }
+
+  .calendar-header .calendar-month-name{
+    flex: inherit;
+    padding: 0 20px;
+  }
+
+  .calendar-days .day.is-selected.is-first-range, .calendar-days .day.is-selected.is-last-range{
+    border-radius: 0 !important;
+    background-color: #2980B9;
+    color: #fff;
+    span{
+      color: #fff;
+      font-weight: 400;
+    }
+  }
+
+  .calendar-days .day.is-first-range{
+    border-radius: 0 !important;
+  }
+
+  .calendar-days .day.is-selected{
+    background-color: #cfe7fa;
+    color: #052e46;
+  }
+
+  .calendar-days .day, .calendar-days-name .day{
+    width: 38px;
+    height: 38px;
+  }
+
+  &.mj-calendar-days .calendar-days .day:not(.is-edge-range):hover{
+    background-color: #e6edf1;
+  }
+
+
+}
+
+.mj-daterange-picker{
+  min-width: 332px;
+  width: 332px;
+}

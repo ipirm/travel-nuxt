@@ -1,0 +1,44 @@
+$font-family-sans-serif: Quicksand, sans-serif;
+$font-weight-medium: 500;
+
+$font-size-base: 1rem !default;
+$h1-font-size: $font-size-base * 2.75; // 44 px
+$h2-font-size: $font-size-base * 2.25 !default; // 36 px
+$h3-font-size: $font-size-base * 1.75 !default; // 28 px
+$h4-font-size: $font-size-base * 1.5 !default; // 24 px
+$h5-font-size: $font-size-base * 1.25 !default; // 20 px
+$h6-font-size: $font-size-base !default; // 16 px
+
+$red: #ff530d;
+$orange: #faab1a;
+$yellow: #fac132;
+$green: #74ceb7;
+$blue: #094c74;
+$blue-light: #2980b9;
+$blue-dark: #052e46;
+$gray-light: #5b778c;
+$dark-secondary: #01080c;
+
+$primary: $blue !default;
+$secondary: $orange;
+$info: $blue-light;
+$danger: $red !default;
+$light: #9db7c7;
+$dark: $blue-dark;
+
+$body-color: $dark;
+
+$grid-columns: 24;
+
+$label-margin-bottom: 2px;
+$border-radius: 2px;
+$input-btn-focus-width: 1px;
+
+$input-btn-font-size: 0.8125rem; // 13 px
+$input-btn-padding-y: 0.5785rem;
+$btn-font-weight: $font-weight-medium;
+$form-group-margin-bottom: 0.75rem;
+
+$navbar-light-color: $primary;
+$dropdown-link-color: $navbar-light-color;
+$dropdown-link-hover-bg: #e6edf1;

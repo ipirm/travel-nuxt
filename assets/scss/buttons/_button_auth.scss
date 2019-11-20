@@ -1,0 +1,49 @@
+.btn-login,
+.btn-signup {
+  font-weight: bold;
+  @include button-variant(
+    $secondary,
+    $secondary,
+    $hover-background:  lighten($secondary, 8%),
+    $hover-border:      lighten($secondary, 10%)
+  );
+  &:focus,
+  &.focus {
+    background-color: $secondary;
+    border-color: darken($secondary, 10%);
+  }
+}
+
+.btn-auth-social {
+  position: relative;
+  height: 2.6875rem;
+  @include button-outline-variant(
+    $info,
+    $info,
+    $active-background:  lighten($info, 45%),
+    $active-border:      lighten($info, 7.5%)
+  );
+}
+
+.btn-facebook {
+  > div {
+    position: absolute;
+    top: calc(50% - 11px);
+    width: 23px;
+    height: 23px;
+    background: url("../icons/login_fb_btn.svg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.btn-google {
+  > div {
+    position: absolute;
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+    margin-left: -3px;
+    background: url("../icons/login_g_btn.svg") no-repeat;
+    background-size: cover;
+  }
+}

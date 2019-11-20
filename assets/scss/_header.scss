@@ -1,0 +1,190 @@
+.page-header {
+  border-bottom: 1px solid #e6edf1;
+
+  .container-fluid {
+    max-width: 1440px;
+  }
+
+  .navbar {
+    @media (max-width: 206px) {
+      flex-direction: column;
+    }
+    font-size: rem(14);
+    font-weight: $font-weight-medium;
+    justify-content: start;
+
+    .navbar-brand {
+      padding: 0;
+      @include media-breakpoint-down('xs') {
+        display: none;
+      }
+      @include media-breakpoint-between('xs','sm') {
+        width: 200px;
+        height: 60 / 250 * 200px;
+      }
+    }
+
+    .navbar-toggler {
+      padding-left: 0;
+      @media (max-width: 206px) {
+        margin-bottom: 1rem;
+      }
+      .navbar-toggler-icon {
+        border-color: transparent;
+        width: $navbar-icon-width;
+        height: $navbar-icon-width;
+        padding: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .toggler-line {
+          display: block;
+          width: 100%;
+          border-bottom: 2px solid $primary;
+        }
+      }
+    }
+
+    .nav-link {
+      position: relative;
+    }
+
+    .navbar-collapse {
+      &:not(.show) {
+        .nav-item:last-child {
+          padding-right: 1.5rem;
+        }
+        .nav-link {
+          margin: 0 1rem;
+          @include media-breakpoint-between('md', 'lg') {
+            margin: 0 .3rem;
+          }
+          &:hover:after {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 100%;
+            margin-top: 2px;
+            border-bottom: 1px solid $primary;
+            box-shadow: 0 0 2px $primary;
+          }
+        }
+      }
+      &.show {
+        @media (max-width: 768px) {
+          position: absolute;
+          top: 0;
+          left: - $grid-gutter-width / 2;
+          width: 220px;
+          padding: .5rem 0;
+          background-color: $body-bg;
+          z-index: $zindex-modal;
+          box-shadow: 0px 1px 7px rgba(0,0,0,0.4);
+
+          .nav-link {
+            font-size: $font-size-sm;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 15px;
+            &:hover {
+              background-color: #f8f9fa;
+            }
+          }
+
+          .nav-item:first-child {
+            .nav-link {
+              &:hover {
+                background-color: $body-bg;
+              }
+            }
+          }
+
+          .navbar-close {
+            cursor: pointer;
+            margin-top: -10px;
+          }
+        }
+      }
+
+      .nav-link {
+        padding: 0;
+      }
+    }
+
+    .navbar-icons {
+      margin-top: -4px;
+      flex-direction: row;
+
+      @media (max-width: 206px) {
+        flex-direction: column;
+        margin-left: 0 !important;
+        margin-bottom: .5rem;
+      }
+      .nav-link-icon {
+        padding: 0 .5rem;
+
+        @media (min-width: 768px) and (max-width: 840px) {
+          padding: 0 .25rem;
+        }
+
+        @media (max-width: 206px) {
+          margin-bottom: .5rem;
+        }
+        .navbar-badge {
+          position: absolute;
+          top: -3px;
+          right: 2px;
+          width: 16px;
+          height: 16px;
+          padding: 0;
+          font-size: 11px;
+          line-height: 16px;
+        }
+
+        &:hover {
+          color: $secondary;
+          .navbar-badge {
+            background-color: $secondary;
+          }
+        }
+      }
+    }
+
+    .dropdown_menu {
+      display: none;
+      position: absolute;
+      right: 0;
+      width: 143px;
+      padding: 11px 0;
+      border-radius: 4px;
+      box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+      background-color: $body-bg;
+      z-index: $zindex-dropdown;
+
+      .dropdown-item {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+        font-size: 13px;
+        font-weight: $font-weight-medium;
+      }
+    }
+
+    .dropdown:hover {
+      .dropdown_menu {
+        display: block;
+      }
+    }
+
+    .avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50rem;
+      overflow: hidden;
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    border-color: transparent;
+  }
+}

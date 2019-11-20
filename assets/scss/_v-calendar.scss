@@ -1,0 +1,114 @@
+html {
+  .vc-container {
+    width: 100%;
+    font-family: Quicksand;
+    border: none;
+  }
+
+  .vc-title {
+    font-size: 14px;
+    color: #094c74;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .vc-arrows-container {
+    svg {
+      fill: #b5c9d5;
+    }
+  }
+
+  .vc-weekday {
+    font-size: 13px;
+    color: #6b94ac;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .vc-day-content {
+    width: 60px !important;
+    height: 50px !important;
+    align-items: flex-start !important;
+    padding-top: 5px;
+    font-size: 16px;
+    color: #b5c9d5;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 0;
+    display: flex;
+
+    &.chosen, &:focus {
+      background-color: #2980b9 !important;
+      color: #fff !important;
+
+      &:focus {
+        background-color: #2980b9 !important;
+      }
+
+      + .calendar-money {
+        color: #fff;
+      }
+    }
+  }
+
+  .vc-text-base {
+    height: 40px;
+    width: 100%;
+    font-size: 13px;
+    padding: 10px;
+    color: #01080c;
+    cursor: pointer;
+    border: 1px solid #b5c9d5;
+    border-radius: 0;
+    font-weight: 600;
+
+    &::-webkit-input-placeholder {
+      font-size: 13px;
+      color: #01080c;
+      font-weight: 400;
+    }
+
+    &:-ms-input-placeholder {
+      font-size: 13px;
+      color: #01080c;
+      font-weight: 400;
+    }
+
+    &::-ms-input-placeholder {
+      font-size: 13px;
+      color: #01080c;
+      font-weight: 400;
+    }
+
+    &::placeholder {
+      font-size: 13px;
+      color: #01080c;
+      font-weight: 400;
+    }
+  }
+
+  .vc-h-full {
+    width: 100%;
+  }
+
+  .calendar-money {
+    bottom: 5px !important;
+    font-size: 13px;
+    font-weight: 500;
+    pointer-events: none;
+  }
+
+  .vc-rounded-full {
+    border-radius: 0 !important;
+    width: 60px !important;
+    height: 50px !important;
+    background-color: transparent !important;
+  }
+
+}
+
+
+.vc-highlights + div .vc-day-content {
+  color: #094c74;
+
+}

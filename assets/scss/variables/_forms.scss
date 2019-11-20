@@ -1,0 +1,19 @@
+$border-radius:               2px;
+
+$component-active-color:      $white !default;
+$component-active-bg:         $secondary;
+
+$enable-validation-icons:     false;
+
+$input-btn-focus-width:       1px;
+$input-btn-focus-color:       rgba($component-active-bg, .25) !default;
+$input-btn-focus-box-shadow:  0 0 1px $input-btn-focus-width $input-btn-focus-color !default;
+$input-btn-font-size:         $font-size-sm;
+$input-btn-padding-y:         .6rem;
+$input-placeholder-color:     #9db7c7 !default;
+$input-focus-border-color:    $secondary;
+$btn-font-weight:             $font-weight-medium;
+
+$label-margin-bottom:         2px;
+$form-group-margin-bottom:    0.75rem;
+$form-feedback-font-size:     rem(12);

@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+
+  nuxt:
+    build:
+      context: .
+      dockerfile: Dockerfile.nuxt
+    ports:
+      - 8000:8000
+    

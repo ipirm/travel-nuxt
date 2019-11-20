@@ -1,0 +1,118 @@
+.card-auth {
+  width: 320px;
+  border: 2px solid $secondary;
+  border-radius: rem(10);
+  box-shadow: 0 1px 5px 2px rgba(0,0,0,0.1);
+  font-size: rem(13);
+  padding: 30px;
+
+  .card-title {
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .text-small {
+    font-size: rem(12);
+  }
+
+  .card-footer {
+    text-align: center;
+    background-color: $card-bg;
+    border-top: none;
+    padding: 0 1rem;
+  }
+
+  .divider-or {
+    position: relative;
+    margin: $form-group-margin-bottom 0;
+    color: darken($border-color, 30%);
+    text-align: center;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 10px;
+      content: '';
+      display: block;
+      width: 110px;
+      border-bottom: 1px solid $border-color;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+}
+.card-auth-operator {
+  width: 380px;
+  border: 2px solid $secondary;
+  border-radius: rem(10);
+  box-shadow: 0 1px 5px 2px rgba(0,0,0,0.1);
+  font-size: rem(13);
+  padding: 30px;
+
+  .form-group {
+    max-width: 259px;
+    margin: 0 auto;
+  }
+  .btn-signup {
+    margin-top: 37px;
+    max-width: 259px;
+    margin-left: 27px;
+  }
+  .card-title {
+    text-align: center;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .text-small {
+    font-size: rem(12);
+  }
+
+  .card-footer {
+    text-align: center;
+    background-color: $card-bg;
+    border-top: none;
+    padding: 0 1rem;
+  }
+
+  .divider-or {
+    position: relative;
+    margin: $form-group-margin-bottom 0;
+    color: darken($border-color, 30%);
+    text-align: center;
+    &:before,
+    &:after {
+      position: absolute;
+      top: 10px;
+      content: '';
+      display: block;
+      width: 110px;
+      border-bottom: 1px solid $border-color;
+    }
+    &:after {
+      right: 0;
+    }
+  }
+
+  .traveler-select{
+    width: 73px !important;
+    display: inline-block !important;
+  }
+  #phone_number{
+    width: 176px;
+    display: inline-block;
+  }
+  .phone-number-label{
+    display: block;
+  }
+  .back-label{
+    margin-top: 10px;
+    color: blue;
+    cursor: pointer;
+  }
+}
